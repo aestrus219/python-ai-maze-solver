@@ -19,8 +19,8 @@ class Frontier():
         if self.empty():
             raise Exception("Frontier is empty")
         else:
-            node = self.frontier[-1]
-            self.frontier = self.frontier[:-1]
+            node = self.frontier[0]
+            self.frontier = self.frontier[1:]
             return node
 
 class Maze():
